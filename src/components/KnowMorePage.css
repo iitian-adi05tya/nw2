@@ -1,0 +1,376 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.block {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.block.visible {
+  animation: appear 0.8s forwards ease-out;
+}
+
+.know-more-page {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.nwa-news-text {
+  font-size: 86px;
+  font-weight: bold;
+  margin-top: 60px;
+  color: #333;
+}
+
+.image-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.card {
+  width: 30%;
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.electric-aviation-text {
+  margin: 40px 0;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f;
+    color: white;
+  }
+  
+  .nwa-news-text, 
+  .electric-aviation-text h1, 
+  .electric-aviation-text h2, 
+  .electric-aviation-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff6f91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3);
+    animation: floatIn3D 1s ease-out forwards;
+  }
+  
+  .electric-aviation-text h2, 
+  .electric-aviation-text h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .carousel-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .carousel-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(106, 17, 203, 0.3);
+  }
+  .nwa-news-text,
+.electric-aviation-text h1 {
+  transform-origin: center left; 
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nwa-news-text:hover,
+.electric-aviation-text h1:hover {
+  transform: scale(1.05) rotateY(-5deg); 
+  text-shadow: 4px 4px 12px rgba(255, 255, 255, 0.5);
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  
+  .block.visible {
+    animation: fadeIn 1s forwards ease-out;
+  }
+  
+  .block.blue-bottom {
+    border-bottom: 10px solid blue;
+  }
+  
+  .block.blue-top {
+    border-top: 10px solid blue;
+  }
+.block {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .block.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .know-more-page {
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+.block {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.know-more-page {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.nwa-news-text, 
+.electric-aviation-text {
+  transition: opacity 0.5s ease;
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.carousel-button.prev {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.footer-info, .footer-links {
+  flex: 1;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-button.prev {
+    left: 0;
+  }
+  
+  .carousel-button.next {
+    right: 0;
+  }
+  
+  .carousel-image-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-image-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-out;
+    object-fit: cover;
+    transform: scale(1);
+  }
+  
+  .carousel-image-wrapper.slide-left img {
+    transform: scale(1.1);
+  }
+  
+  .carousel-image-wrapper.slide-right img {
+    transform: scale(0.9);
+  }
+  
+  .carousel-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-image-wrapper {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-image-wrapper img {
+    transition: transform 0.5s ease-out;
+  }
+  
+  .carousel-image-wrapper .slide-left {
+    animation: slide-left 1s ease-in-out forwards;
+  }
+  
+  .carousel-image-wrapper .slide-right {
+    animation: slide-right 1s ease-in-out forwards;
+  }
+  
+  @keyframes slide-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .footer-info, .footer-links {
+    flex: 1;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-links li:hover {
+    text-decoration: underline;
+  }
+  
+  
+  

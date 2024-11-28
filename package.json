@@ -1,0 +1,40 @@
+{
+  "name": "nw",
+  "version": "1.0.0",
+  "description": "A 3D landing page with interactive scrolling video.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "dev": "npm start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "three.js",
+    "3D website",
+    "interactive landing page"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@react-three/fiber": "^8.9.0",
+    "gsap": "^3.12.2",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.1",
+    "react-scripts": "^5.0.1",
+    "three": "^0.170.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
